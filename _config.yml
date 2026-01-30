@@ -59,7 +59,7 @@ plugins:
 
 author:
   name   : "Kunal Dhiman"
-  avatar : "/assets/images/Headshot.jpeg"
+  avatar : "/assets/images/headshot_cropped.jpeg"
   bio    : "EE Graduate documenting my projects and learning in RF, microwave, and analog design."
   links:
     # - label: "Website"
