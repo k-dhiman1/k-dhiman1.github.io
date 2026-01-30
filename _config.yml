@@ -60,7 +60,7 @@ plugins:
 author:
   name   : "Kunal Dhiman"
   avatar : "/assets/images/Headshot.jpeg"
-  bio    : "Electrical Engineering Graduate documenting my projects and learning in RF, microwave, and analog design."
+  bio    : "EE Graduate documenting my projects and learning in RF, microwave, and analog design."
   links:
     # - label: "Website"
     #  icon: "fas fa-fw fa-link"
@@ -84,6 +84,9 @@ author:
     #  icon: "fab fa-fw fa-instagram"
     #  url: "https://instagram.com/"
 
+atom_feed:
+  hide: true
+  
 footer:
   links:
     # - label: "Twitter"
@@ -95,6 +98,7 @@ footer:
     # - label: "Instagram"
     #  icon: "fab fa-fw fa-instagram"
     #  url: "https://instagram.com/"
+  powered_by: false
   copyright: "© 2026 Kunal Dhiman"
 
 defaults:
