@@ -75,10 +75,10 @@ author:
       icon: "fab fa-fw fa-github"
       url: "https://github.com/k-dhiman1"
     - label: "Resume"
-      icon: "fas fa-fw fa-file-pdf"
+      icon: "far fa-file-alt"
       url: "/assets/Kunal_Dhiman_Resume.pdf"
     - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
+      icon: "far fa-envelope"
       url: "mailto:kunaldhiman21@gmail.com"
     # - label: "Instagram"
     #  icon: "fab fa-fw fa-instagram"
@@ -98,7 +98,6 @@ footer:
     # - label: "Instagram"
     #  icon: "fab fa-fw fa-instagram"
     #  url: "https://instagram.com/"
-  powered_by: false
   copyright: "© 2026 Kunal Dhiman"
 
 defaults:
