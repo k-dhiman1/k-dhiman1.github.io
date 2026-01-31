@@ -112,7 +112,7 @@ defaults:
       comments: true
       share: true
       related: true
-      mathjax: true
+      # mathjax: true
   # _pages
   - scope:
       # path: "_pages"
@@ -121,7 +121,7 @@ defaults:
     values:
       layout: single
       author_profile: true
-      mathjax: true
+      # mathjax: true
   # _wiki
   - scope:
       path: ""
@@ -129,7 +129,7 @@ defaults:
     values:
       layout: single
       author_profile: false
-      mathjax: true
+      # mathjax: true
       toc: true
       toc_label: "On this page"
       toc_icon: "list"
