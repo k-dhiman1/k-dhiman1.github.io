@@ -18,7 +18,7 @@ wiki-nav:
     children:
       - title: "Op-Amp Topologies"
         url: /wiki/op-amps/
-  - title: "t"
+  - title: "Electromagnetics"
     children:
       - title: "Maxwell's Equations"
         url: /wiki/maxwell-equations/
