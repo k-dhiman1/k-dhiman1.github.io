@@ -1,10 +1,6 @@
 main:
-  # - title: "Posts"
-  #  url: /posts/
-  # - title: "Categories"
-  #  url: /categories/
-  # - title: "Tags"
-  #  url: /tags/
+  - title: "Home"
+    url: /
   - title: "Projects"
     url: /projects/
   - title: "Wiki"
@@ -18,83 +14,11 @@ wiki-nav:
     children:
       - title: "Transmission Lines"
         url: /wiki/transmission-lines/
-      - title: "S-Parameters"
-        url: /wiki/s-parameters/
-      - title: "Impedance Matching"
-        url: /wiki/impedance-matching/
   - title: "Analog Design"
     children:
       - title: "Op-Amp Topologies"
         url: /wiki/op-amps/
-      - title: "Filter Design"
-        url: /wiki/filters/
-  - title: "RF & Microwave Theory"
+  - title: "t"
     children:
-      - title: "Transmission Lines"
-        url: /wiki/transmission-lines/
-      - title: "S-Parameters"
-        url: /wiki/s-parameters/
-      - title: "Impedance Matching"
-        url: /wiki/impedance-matching/
-  - title: "Analog Design"
-    children:
-      - title: "Op-Amp Topologies"
-        url: /wiki/op-amps/
-      - title: "Filter Design"
-        url: /wiki/filters/
-  - title: "RF & Microwave Theory"
-    children:
-      - title: "Transmission Lines"
-        url: /wiki/transmission-lines/
-      - title: "S-Parameters"
-        url: /wiki/s-parameters/
-      - title: "Impedance Matching"
-        url: /wiki/impedance-matching/
-  - title: "Analog Design"
-    children:
-      - title: "Op-Amp Topologies"
-        url: /wiki/op-amps/
-      - title: "Filter Design"
-        url: /wiki/filters/
-  - title: "RF & Microwave Theory"
-    children:
-      - title: "Transmission Lines"
-        url: /wiki/transmission-lines/
-      - title: "S-Parameters"
-        url: /wiki/s-parameters/
-      - title: "Impedance Matching"
-        url: /wiki/impedance-matching/
-  - title: "Analog Design"
-    children:
-      - title: "Op-Amp Topologies"
-        url: /wiki/op-amps/
-      - title: "Filter Design"
-        url: /wiki/filters/
-  - title: "RF & Microwave Theory"
-    children:
-      - title: "Transmission Lines"
-        url: /wiki/transmission-lines/
-      - title: "S-Parameters"
-        url: /wiki/s-parameters/
-      - title: "Impedance Matching"
-        url: /wiki/impedance-matching/
-  - title: "Analog Design"
-    children:
-      - title: "Op-Amp Topologies"
-        url: /wiki/op-amps/
-      - title: "Filter Design"
-        url: /wiki/filters/
-  - title: "RF & Microwave Theory"
-    children:
-      - title: "Transmission Lines"
-        url: /wiki/transmission-lines/
-      - title: "S-Parameters"
-        url: /wiki/s-parameters/
-      - title: "Impedance Matching"
-        url: /wiki/impedance-matching/
-  - title: "Analog Design"
-    children:
-      - title: "Op-Amp Topologies"
-        url: /wiki/op-amps/
-      - title: "Filter Design"
-        url: /wiki/filters/
+      - title: "Maxwell's Equations"
+        url: /wiki/maxwell-equations/
