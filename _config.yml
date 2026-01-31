@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Kunal Dhiman
-email: 
+email: kunaldhiman21@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
@@ -60,7 +60,7 @@ plugins:
 author:
   name   : "Kunal Dhiman"
   avatar : "/assets/images/headshot_cropped.jpeg"
-  bio    : "EE graduate documenting my projects and learning in RF, microwave, and analog design."
+  bio    : "Electrical engineering graduate documenting my projects and learning." # in RF, microwave, and analog design."
   links:
     # - label: "Website"
     #  icon: "fas fa-fw fa-link"
@@ -98,7 +98,7 @@ footer:
     # - label: "Instagram"
     #  icon: "fab fa-fw fa-instagram"
     #  url: "https://instagram.com/"
-  copyright: "© 2026 Kunal Dhiman"
+  # copyright: "© 2026 Kunal Dhiman"
 
 defaults:
   # _posts
