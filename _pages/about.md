@@ -9,4 +9,13 @@ Cupidatat ea do et in excepteur in. Ad nostrud ut est esse eu duis ea sunt eiusm
 
 $$ \frac{1}{2} $$
 
-\\[ A_v = \frac{V_\text{out}}{V_\text{out}}\\]
+\\[ A_v = \frac{V_\text{out}}{V_\text{out}} \\]
+
+$$ A_v = \frac{V_\text{out}}{V_\text{out}} $$
+
+$A_v = \frac{V_\text{out}}{V_\text{out}}$
+
+\begin{aligned}
+A_v &= \frac{V_\text{out}}{V_\text{out}}
+\frac{V_\text{out}}{V_\text{out}} &= -g_m R_D \text{V}/\text{V}
+\end[aligned}
