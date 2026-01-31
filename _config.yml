@@ -130,6 +130,10 @@ defaults:
       layout: single
       author_profile: false
       mathjax: true
+      toc: true
+      toc_label: "On this page"
+      toc_icon: "list"
+      toc_sticky: true
       sidebar:
         nav: "wiki-nav"
 
