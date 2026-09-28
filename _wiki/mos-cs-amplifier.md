@@ -1,6 +1,5 @@
 ---
 title: "MOS Common-Source (CS) Amplifier"
-permalink: /wiki/mos-cs-amplifier/
 toc: true
 toc_label: "Contents"
 ---
