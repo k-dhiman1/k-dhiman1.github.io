@@ -9,7 +9,7 @@ main:
     url: /about/
 
 # Sidebar for the Wiki section
-circuits_nav:
+wiki-nav:
   - title: "Analog Circuits"
     children:
       - title: "MOS CS Amplifier"
