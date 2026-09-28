@@ -1,5 +1,6 @@
 ---
 title: "MOS Common-Source (CS) Amplifier"
+classes: wide
 toc: true
 toc_label: "Contents"
 ---
