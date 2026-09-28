@@ -14,7 +14,9 @@ $$ i_d = g_m v_{gs}, \label{eq:vccs} $$
 where $i_d$ is the incremental or small-signal drain current, $g_m$ is the transconductance established at the given transistor operating point, and $v_{gs}$ is the incremental gate-source voltage. Passing this current through a load resistor $R_L$ allows for amplification to take place, provided that $ \abs{g_m R_L} > 1$, by generating an output voltage that is (ideally) a scaled version of the input.
 
 A basic incremental circuit model for a MOS transistor based on Eq. \eqref{eq:vccs} is shown below. The effects of channel-length modulation (i.e., the dependence of the drain current on the drain-source voltage) can be accounted for by including a resistor $r_O$ between the drain and the source terminals.
-![MOS transistor small-signal equivalent circuit](/assets/images/wiki/mos_ss.svg)
+
+![MOS transistor small-signal equivalent circuit](/assets/images/wiki/mos_ss.svg){: .align-center}
+
 <!-- 
 
 ### Transconductance
