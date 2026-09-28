@@ -12,5 +12,5 @@ main:
 wiki-nav:
   - title: "Analog Circuits"
     children:
-      - title: "MOS CS Amplifier"
+      - title: "MOS Common-Source Amplifier"
         url: /wiki/mos-cs-amp/
