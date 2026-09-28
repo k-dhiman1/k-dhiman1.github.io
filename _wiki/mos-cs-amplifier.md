@@ -9,7 +9,7 @@ toc_label: "Contents"
 
 In the saturation region, the MOS transistor can be thought of as a voltage-controlled current source (VCCS), where the voltage at one port (gate-source) controls the current through the device. For small, incremental fluctuations in the transistor gate-source voltage, the device can be approximated as a *linear* VCCS, where the output current is related to the input voltage via a parameter known as the transconductance of the device. This relation is expressed as
 
-$$ i_d = g_m v_{gs}, \label{eq:vccs} $$
+\begin{equation} i_d = g_m v_{gs}, \label{eq:vccs} \end{equation}
 
 where $i_d$ is the incremental or small-signal drain current, $g_m$ is the transconductance established at the given transistor operating point, and $v_{gs}$ is the incremental gate-source voltage. Passing this current through a load resistor $R_L$ allows for amplification to take place, provided that $ |g_m R_L| > 1$, by generating an output voltage that is a scaled version of the input.
 
