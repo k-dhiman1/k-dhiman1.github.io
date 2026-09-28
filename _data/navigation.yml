@@ -9,16 +9,8 @@ main:
     url: /about/
 
 # Sidebar for the Wiki section
-wiki-nav:
-  - title: "RF & Microwave Theory"
+circuits_nav:
+  - title: "Analog Circuits"
     children:
-      - title: "Transmission Lines"
-        url: /wiki/transmission-lines/
-  - title: "Analog Design"
-    children:
-      - title: "Op-Amp Topologies"
-        url: /wiki/op-amps/
-  - title: "Electromagnetics"
-    children:
-      - title: "Maxwell's Equations"
-        url: /wiki/maxwell-equations/
+      - title: "MOS CS Amplifier"
+        url: /wiki/mos-cs-amp/
