@@ -82,7 +82,7 @@ To maximize the voltage gain, we would like to have $R_A \vert \vert R_B \gg R_g
 
 ## Source Degeneration
 
-When building discrete circuits, it is preferable to minimize the use of active components to reduce circuit cost. Thus, we would like to bias the transistor using a passive component instead of a current source (Fig. 3). From the substitution theorem, we know that any circuit element can be replaced with another provided that the voltage across and the current through the branch containing the element remain unchanged. In other words, we can replace the current source $I_\text{ref}$ in Fig. 3 with a source resistor $R_S$ provided that the source voltage $V_S$ and the drain current $I_D$ remain the same.
+When building discrete circuits, it is preferable to minimize the use of active components to reduce circuit cost. Thus, we would like to bias the transistor using a passive component instead of a current source (Fig. 3). From the substitution theorem, we know that any circuit element can be replaced with another provided that the voltage across and the current through the branch containing the element remain unchanged. In other words, we can replace the current source $I_\text{ref}$ in Fig. 3 with a source resistor $R_S$ provided that the source voltage $V_S$ and the drain current $I_D$ remain the same. This addition of a resistor in series with the source is also known as source degeneration.
 
 From Fig. 3, it can be observed that $I_D = I_\text{ref}$, $V_G = R_B V_{DD}/(R_A + R_B) \triangleq V_{G0}$, and $V_S = V_{G0} - V_{GS0} \triangleq V_{S0}$, where
 
@@ -104,6 +104,32 @@ The substitution is highlighted in Fig. 5 below.
 </div>
 
 Since we have substituted the current source with a resistor and not eliminated it entirely, we still expect there to be some negative feedback that stabilizes the circuit. This is indeed true and can be observed as follows: when $I_D$ increases ($I_D > I_\text{ref}$), $V_{S} = I_D R_S$ increases, causing $I_D$ to decrease (because $V_{G} = V_{G0}$ is held constant). Similarly, if $I_D$ decreases ($I_D < I_\text{ref}$), then $V_{S}$ decreases, causing $I_D$ to increase. Therefore, the presence of the source resistor $R_S$ causes the transistor to resist fluctuations in its bias current, though not as strongly as current-source biasing.
+
+Another way to look at the negative feedback due to $R_S$ is to consider an incremental change $v_g$ in the gate voltage. This $v_g$ will result in a change $i_d$ in the drain current. From the above discussion, we know that the source voltage will change in response to $i_d$ (Ohm's law); i.e., the incremental source voltage $v_s$ is non-zero. We also know from Eq. \eqref{eq:vccs} that the change in drain current due to an incremental $v_{gs}$ is $i_d = g_m v_{gs}$. The incremental source voltage is then given by
+
+\begin{equation} 
+  v_s = i_d R_S = g_m v_{gs} R_S = g_m (v_g - v_s) R_S \implies v_s = \frac{g_m R_S}{1 + g_m R_S}v_g.
+  \label{eq:vcvs-gain}
+\end{equation}
+
+Note that the factor $g_m R_S/(1 + g_m R_S) < 1$ in the above equation, so while the source voltage changes in a way as to resist the change in the gate voltage (which is the cause for the drain current changing), it cannot fully offset it. Compare this to the case of current-source biasing by setting $R_S \to \infty$ in \label{eq:vcvs-gain}. This yields $v_s = v_g$, meaning that the change in the source voltage is equal to the change in the gate voltage, thus maintaining $v_{GS}$ constant, and therefore $i_D$ remains constant.
+
+To analyze the performance of the source-degenerated common-source amplifier, consider the incremental circuit shown in Fig. 6 below. Note that $M_1$ represents the ideal small-signal MOS transistor model (Fig. 1, left). The effect of channel-length modulation is included by explicitly placing $r_O$ in parallel with $M_1$. 
+
+<div style="text-align: center; margin: 25px 0;">
+  <img src="/assets/images/wiki/mos_cs_degen_ss.svg" alt="MOS degen ss" style="max-height: 350px; width: auto; display: block; margin: 0 auto;" />
+  <p style="font-style: italic; font-size: 0.9em; color: #555; margin-top: 10px;">
+    Figure 6: Basic incremental circuit for common-source amplifier with source degeneration.
+  </p>
+</div>
+
+Applying KCL at the source and substituting $v_g = v_\text{in}$ and $v_\text{out} = -v_s R_L/R_S$ gives
+
+$$ g_m v_{gs} + \frac{v_\text{out} - v_s}{r_O} = \frac{v_s}{R_s} \implies g_m (v_\text{in} - v_s) - \frac{v_s R_L/R_S + v_s}{r_O} = \frac{v_s}{R_s}.$$
+
+Solving gives
+
+$$v_s = \frac{g_m}{1/R_S + g_m + R_L/(r_O R_S) + 1/r_O}.$$
 
 <!-- 
 
