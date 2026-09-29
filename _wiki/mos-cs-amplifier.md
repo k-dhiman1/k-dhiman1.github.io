@@ -103,6 +103,8 @@ The substitution is highlighted in Fig. 5 below.
   </p>
 </div>
 
+Since we have substituted the current source with a resistor and not eliminated it entirely, we still expect there to be some negative feedback that stabilizes the circuit. This is indeed true and can be observed as follows: when $I_D$ increases ($I_D > I_\text{ref}$), $V_{S} = I_D R_S$ increases, causing $I_D$ to decrease (because $V_{G} = V_{G0}$ is held constant). Similarly, if $I_D$ decreases ($I_D < I_\text{ref}$), then $V_{S} decreases, causing $I_D$ to increase. Therefore the presence of the source resistor $R_S$ causes the transistor to resist fluctuations in its bias current, though not as strongly when compared to the current source biasing.
+
 <!-- 
 
 ### Transconductance
