@@ -36,7 +36,7 @@ In this configuration, the source terminal is common to both the input and the o
 The effects of channel-length modulation can be included by replacing $R_L$ with $R_L \vert\vert r_O$ in Eq. \eqref{eq:cs-gain}. Additionally, if $R_\text{in}$ and $R_\text{out}$ are finite, then the voltage gain can be expressed as
 
 \begin{equation} 
-  \frac{v_\text{out}}{v_\text{in}} = \frac{v_gs}{v_\text{in}} \cdot \frac{i_d}{v_{gs}} \cdot \frac{v_\text{out}}{i_d} = \frac{R_\text{in}}{R_g + R_\text{in}} \cdot g_m \cdot - \left(R_L \vert\vert R_\text{out}\right).
+  \frac{v_\text{out}}{v_\text{in}} = \frac{v_{gs}}{v_\text{in}} \frac{i_d}{v_{gs}} \cdot \frac{v_\text{out}}{i_d} = \frac{R_\text{in}}{R_g + R_\text{in}} g_m \cdot - \left[\left(R_L \vert\vert R_\text{out}\right)\right].
   \label{eq:cs-overall-gain} 
 \end{equation}
 
