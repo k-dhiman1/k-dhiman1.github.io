@@ -61,7 +61,7 @@ The amplifier topology discussed above requires the n-MOS transistor to biased i
   </p>
 </div>
 
-This biasing scheme employs implicit negative feedback to maintain a constant drain current $I_D = I_\text{ref}$. To observe how, imagine that there is an infinitesimal capacitance connected from the source to ground (it is reasonable to assume that a node has some small capacitance associated with it). If a current $I_D$ is entering the source and $I_\text{ref}$ is leaving it, then $I_D - I_\text{ref}$ must pass through the infinitesimal capacitor (KCL). If the transistor's drain current is greater than $I_\text{ref}$, then the capacitor current is positive and it begins to charge, thus increasing $V_S$; if $V_S$ increases while $V_G$ is held constant, then the drain current $I_D$ will decrease. Conversely, if the drain current is less than $I_\text{ref}$, then the capacitor current is negative and it begins to discharge to provide the current required to satisfy KCL, thus decreasing $V_S$; if $V_S$ decreases while $V_G$ is held constant, then the drain current $I_D$ will increase. This process continues until $I_D = I_\text{ref}$.
+This biasing scheme employs implicit negative feedback to maintain a constant drain current $I_D = I_\text{ref}$. To observe how, imagine that there is an infinitesimal capacitance connected from the source to ground (it is reasonable to assume that the node has some small parasitic capacitance associated with it). If a current $I_D$ is entering the source and $I_\text{ref}$ is leaving it, then $I_D - I_\text{ref}$ must pass through the infinitesimal capacitor (KCL). If the transistor's drain current is greater than $I_\text{ref}$, then the capacitor current is positive and it begins to charge, thus increasing $V_S$; if $V_S$ increases while $V_G$ is held constant, then the drain current $I_D$ will decrease. Conversely, if the drain current is less than $I_\text{ref}$, then the capacitor current is negative and it begins to discharge to provide the current required to satisfy KCL, thus decreasing $V_S$; if $V_S$ decreases while $V_G$ is held constant, then the drain current $I_D$ will increase. This process continues until $I_D = I_\text{ref}$.
 
 The next step is to connect the input voltage to the gate and the load resistor to the drain. This is done through the use of coupling/bypass capacitors, which ensure that the transistor $M_1$'s operating point is not disturbed by the addition of these components. Furthermore, the source terminal needs to be incrementally grounded via a coupling capacitor, as it is the common terminal for the amplifier. The final circuit is shown in Fig. 4 below.
 
@@ -71,6 +71,30 @@ The next step is to connect the input voltage to the gate and the load resistor 
     Figure 4: Full n-MOS common-source amplifier circuit.
   </p>
 </div>
+
+The small-signal voltage gain of this circuit is given by Eq. \eqref{eq:cs-overall-gain}, where $R_\text{in} = R_A \vert \vert R_B$ is the input resistance looking into the gate of $M_1$ and $R_\text{out} = R_D \vert \vert r_O$ is the output resistance looking into the drain of $M_1$. That is,
+
+$$
+  \frac{v_\text{out}}{v_\text{in}} = -\frac{R_A \vert \vert R_B}{R_g + R_A \vert \vert R_B} g_m \left(R_L \vert\vert R_D \vert\vert r_O\right).
+$$
+
+To maximize the voltage gain, we would like to have $R_A \vert \vert R_B \gg R_g$ and $R_D \vert \vert r_O \gg R_L$.
+
+## Source Degeneration
+
+When building discrete circuits, it is preferable to minimize the use of active components to reduce the circuit cost. Thus, we would like to eliminate the use of a current source to bias the transistor (Fig. 3) and replace it with a passive component. From the substitution theorem, we know that a circuit element can be replaced with another one provided that the voltage across and the current through the branch containing the element remain unchanged. In other words, we can replace the current source $I_\text{ref}$ in Fig. 3 above with a source resistor $R_S$ provided that the source voltage $V_S$ and the drain current $I_D$ remain the same.
+
+From Fig. 3, it can be observed that $I_D = I_\text{ref}$, $V_G = R_B V_{DD}/(R_A + R_B)$, and $V_S = V_G - V_{GS0}$, where
+
+$$ V_{GS0} = V_{TH} + \sqrt{\frac{2 I_\text{ref}{\mu_n C_{ox} (W/L)}} \quad (M_1 \text{ in saturation; } r_O \to \infty).$$
+
+Thus, the resistor $R_S$ will have to be chosen such that
+
+\begin{equation} 
+  R_S = \left.\frac{R_B V_{DD}}{R_A + R_B} - V_{TH} - \sqrt{\frac{2 I_\text{ref}{\mu_n C_{ox} (W/L)}} \middle/ I_\text{ref}\right. .
+  \label{eq:cs-overall-gain} 
+\end{equation}
+
 
 <!-- 
 
