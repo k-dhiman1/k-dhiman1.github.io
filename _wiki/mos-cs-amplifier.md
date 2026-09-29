@@ -139,6 +139,19 @@ $$
 \frac{v_\text{out}}{v_\text{in}} = \frac{v_s}{v_\text{in}} \cdot \frac{v_\text{out}}{v_s} = \frac{- g_m R_L}{1 + g_m R_S + (R_S + R_L)/r_O}.
 $$
 
+Assuming $r_O \gg R_S + R_L$, we get
+
+$$
+\frac{v_s}{v_\text{in}} \approx \frac{g_m R_S}{1 + g_m R_S} \quad \text{and} \quad \frac{v_\text{out}}{v_\text{in}} \approx \frac{- g_m R_L}{1 + g_m R_S}.
+$$
+
+Thus, for large enough $r_O$, the incremental voltage gain from the gate to the source approaches that of Eq. \eqref{\label{eq:vcvs-gain}}, and $v_\text{out}/v_\text{in} \to - g_m' R_L,$ where $g_m' = g_m/(1 + g_m R_S).$ If we further assume that $g_m R_S \gg 1 \iff g_m \gg 1/R_S,$ then the incremental voltage gain of the degenerated common-source amplifier is given by
+
+\begin{equation} 
+  \frac{v_\text{out}}{v_\text{in}} \approx \frac{-R_L}{R_S} \quad (r_O \gg R_S + R_L; \text{ } g_m \gg 1/R_S).
+  \label{eq:mos-cs-degen-gain}
+\end{equation}
+
 <!-- 
 
 ### Transconductance
