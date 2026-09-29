@@ -35,6 +35,8 @@ Table 1 below shows the ideal input and output resistances desired from a contro
     Table 1: Ideal impedances for 2-port controlled sources.
   </p>
 
+  ## Purpose of Buffers
+
 </div>
 
 If a voltage output is desired from a controlled source, then it is best to design for $R_\text{out} \to 0$ to ensure that all of the output voltage appears across the load. Conversely, if a current output is desired, then it is best to have $R_\text{out} \to \infty$ so that all of the output current is delivered to the load.
