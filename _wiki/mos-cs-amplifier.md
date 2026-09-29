@@ -72,7 +72,7 @@ The next step is to connect the input voltage to the gate and the load resistor 
   </p>
 </div>
 
-The small-signal voltage gain of this circuit is given by Eq. \eqref{eq:cs-overall-gain}, where $R_\text{in} = R_A \vert \vert R_B$ is the input resistance looking into the gate of $M_1$ and $R_\text{out} = R_D \vert \vert r_O$ is the output resistance looking into the drain of $M_1$. That is,
+The small-signal voltage gain of this circuit is given by Eq. \eqref{eq:cs-overall-gain}, where $R_\text{in} = R_A \vert \vert R_B$ is the input resistance looking in from the source ($R_g$ not included) and $R_\text{out} = R_D \vert \vert r_O$ is the output resistance looking into the drain of $M_1$ from the load ($R_L$ not included). That is,
 
 $$
   \frac{v_\text{out}}{v_\text{in}} = -\frac{R_A \vert \vert R_B}{R_g + R_A \vert \vert R_B} g_m \left(R_L \vert\vert R_D \vert\vert r_O\right).
@@ -84,15 +84,15 @@ To maximize the voltage gain, we would like to have $R_A \vert \vert R_B \gg R_g
 
 When building discrete circuits, it is preferable to minimize the use of active components to reduce the circuit cost. Thus, we would like to eliminate the use of a current source to bias the transistor (Fig. 3) and replace it with a passive component. From the substitution theorem, we know that a circuit element can be replaced with another one provided that the voltage across and the current through the branch containing the element remain unchanged. In other words, we can replace the current source $I_\text{ref}$ in Fig. 3 above with a source resistor $R_S$ provided that the source voltage $V_S$ and the drain current $I_D$ remain the same.
 
-From Fig. 3, it can be observed that $I_D = I_\text{ref}$, $V_G = R_B V_{DD}/(R_A + R_B)$, and $V_S = V_G - V_{GS0}$, where
+From Fig. 3, it can be observed that $I_D = I_\text{ref}$, $V_G = R_B V_{DD}/(R_A + R_B) \triangleq V_{G0}$, and $V_S = V_{G0} - V_{GS0} \triangleq V_{S0}$, where
 
-$$ V_{GS0} = V_{TH} + \sqrt{\frac{2 I_\text{ref}{\mu_n C_{ox} (W/L)}} \quad (M_1 \text{ in saturation; } r_O \to \infty).$$
+$$ V_{GS0} = V_{TH} + \sqrt{ \frac{2 I_\text{ref}{\mu_n C_{ox} (W/L)}} } \quad (M_1 \text{ in saturation; } r_O \to \infty).$$
 
 Thus, the resistor $R_S$ will have to be chosen such that
 
 \begin{equation} 
-  R_S = \left.\frac{R_B V_{DD}}{R_A + R_B} - V_{TH} - \sqrt{\frac{2 I_\text{ref}{\mu_n C_{ox} (W/L)}} \middle/ I_\text{ref}\right. .
-  \label{eq:cs-overall-gain} 
+  R_S = \frac{V_{S0}}{I_\text{ref}} = \left.\frac{R_B V_{DD}}{R_A + R_B} - V_{TH} - \sqrt{\frac{2 I_\text{ref}{\mu_n C_{ox} (W/L)}}} \middle/ I_\text{ref}\right. .
+  \label{eq:r_s-value} 
 \end{equation}
 
 
