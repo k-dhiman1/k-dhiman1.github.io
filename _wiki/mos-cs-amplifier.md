@@ -90,10 +90,9 @@ $$ V_{GS0} = V_{TH} + \sqrt{ \frac{2 I_\text{ref}}{\mu_n C_{ox} (W/L)} } \quad (
 
 Thus, the resistor $R_S$ will have to be chosen such that
 
-\begin{equation} 
-  R_S = \frac{V_{S0}}{I_\text{ref}} = \frac{ \frac{R_B V_{DD}}{R_A + R_B} - V_{TH} - \sqrt{\frac{2 I_\text{ref}}{\mu_n C_{ox} (W/L)}} }{I_\text{ref}} .
-  \label{eq:r_s-value} 
-\end{equation}
+$$
+  R_S = \frac{V_{S0}}{I_\text{ref}} = \frac{1}{I_\text{ref}} \left[ \frac{R_B V_{DD}}{R_A + R_B} - V_{TH} - \sqrt{\frac{2 I_\text{ref}}{\mu_n C_{ox} (W/L)}} \right] .
+$$
 
 The substitution is highlighted in Fig. 5 below.
 
