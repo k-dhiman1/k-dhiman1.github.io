@@ -22,7 +22,7 @@ Table 1 below shows the ideal input and output resistances desired from a contro
 
   <div markdown="1" style="display: inline-block; text-align: left;">
 
-| Controlled Source | Ideal $R_{in}$ | Ideal $R_{out}$ |
+| Controlled Source | Ideal $R_\text{in}$ | Ideal $R_\text{out}$ |
 | :--- | :--- | :--- |
 | VCCS | $\infty$ | $\infty$ |
 | VCVS | $\infty$ | $0$ |
@@ -36,3 +36,5 @@ Table 1 below shows the ideal input and output resistances desired from a contro
   </p>
 
 </div>
+
+If a voltage output is desired from a controlled source, then it is best to design for $R_\text{out} \to 0$ to ensure that all of the output voltage appears across the load. Conversely, if a current output is desired, then it is best to have $R_\text{out} \to \infty$ so that all of the output current is delivered to the load.
