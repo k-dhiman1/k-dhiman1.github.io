@@ -130,13 +130,13 @@ $$ g_m v_{gs} + \frac{v_\text{out} - v_s}{r_O} = \frac{v_s}{R_s} \implies g_m (v
 Solving gives
 
 $$
-\frac{v_s}{v_\text{in}} = \frac{g_m}{1/R_S + g_m + R_L/(r_O R_S) + 1/r_O} = \frac{g_m r_O R_S}{r_O + R_S + g_m r_O R_S + R_L}.
+\frac{v_s}{v_\text{in}} = \frac{g_m}{1/R_S + g_m + R_L/(r_O R_S) + 1/r_O} = \frac{g_m R_S}{1 + g_m R_S + (R_S + R_L)/r_O}.
 $$
 
 Finally, 
 
 $$
-\frac{v_\text{out}}{v_\text{in}} = \frac{v_s}{v_\text{in}} \cdot \frac{v_\text{out}}{v_s} = \frac{-g_m r_O R_L}{r_O + R_S + g_m r_O R_S + R_L}.
+\frac{v_\text{out}}{v_\text{in}} = \frac{v_s}{v_\text{in}} \cdot \frac{v_\text{out}}{v_s} = \frac{- g_m R_L}{1 + g_m R_S + (R_S + R_L)/r_O}.
 $$
 
 <!-- 
