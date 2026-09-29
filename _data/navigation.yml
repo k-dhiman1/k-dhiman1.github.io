@@ -14,3 +14,5 @@ wiki-nav:
     children:
       - title: "MOS Common-Source Amplifier"
         url: /wiki/mos-cs-amplifier/
+      - title: "Transconductance"
+        url: /wiki/transconductance/
