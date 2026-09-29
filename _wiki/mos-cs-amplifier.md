@@ -33,7 +33,7 @@ In this configuration, the source terminal is common to both the input and the o
   \label{eq:cs-gain} 
 \end{equation}
 
-The effects of channel-length modulation can be included by replacing $R_L$ with $R_L || r_O$ in Eq. \eqref{eq:cs-gain}.
+The effects of channel-length modulation can be included by replacing $R_L$ with $R_L \vert\vert r_O$ in Eq. \eqref{eq:cs-gain}.
 
 
 
