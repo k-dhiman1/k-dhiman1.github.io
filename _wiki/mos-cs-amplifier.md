@@ -82,7 +82,7 @@ To maximize the voltage gain, we would like to have $R_A \vert \vert R_B \gg R_g
 
 ## Source Degeneration
 
-When building discrete circuits, it is preferable to minimize the use of active components to reduce the circuit cost. Thus, we would like to eliminate the use of a current source to bias the transistor (Fig. 3) and replace it with a passive component. From the substitution theorem, we know that a circuit element can be replaced with another one provided that the voltage across and the current through the branch containing the element remain unchanged. In other words, we can replace the current source $I_\text{ref}$ in Fig. 3 above with a source resistor $R_S$ provided that the source voltage $V_S$ and the drain current $I_D$ remain the same.
+When building discrete circuits, it is preferable to minimize the use of active components to reduce circuit cost. Thus, we would like to bias the transistor using a passive component instead of a current source (Fig. 3). From the substitution theorem, we know that any circuit element can be replaced with another provided that the voltage across and the current through the branch containing the element remain unchanged. In other words, we can replace the current source $I_\text{ref}$ in Fig. 3 with a source resistor $R_S$ provided that the source voltage $V_S$ and the drain current $I_D$ remain the same.
 
 From Fig. 3, it can be observed that $I_D = I_\text{ref}$, $V_G = R_B V_{DD}/(R_A + R_B) \triangleq V_{G0}$, and $V_S = V_{G0} - V_{GS0} \triangleq V_{S0}$, where
 
