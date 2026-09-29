@@ -39,7 +39,6 @@ Table 1 below shows the ideal input and output resistances desired from a contro
 
 If a voltage output is desired from a controlled source, then it is best to design for $R_\text{out} \to 0$ to ensure that all of the output voltage appears across the load. Conversely, if a current output is desired, then it is best to have $R_\text{out} \to \infty$ so that all of the output current is delivered to the load.
 
+## Purpose of Buffers
 
-  ## Purpose of Buffers
-
-  A controlled source built using a single MOS transistor can only realize a maximum incremental gain of 1. What is the point of having a VCVS or a CCCS with such a property? The answer is that such circuits function as buffers between a source and a load.
+A controlled source built using a single MOS transistor can only realize a maximum incremental gain of 1. What is the point of having a VCVS or a CCCS with such a property? The answer is that such circuits function as buffers between a source and a load.
