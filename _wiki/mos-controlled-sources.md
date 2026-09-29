@@ -14,7 +14,9 @@ There are four kinds of controlled sources, namely the voltage-controlled curren
   </p>
 </div>
 
-Table 1 below shows the ideal input and output resistances desired from a controlled source. If a source is voltage-controlled, then it is measuring or sensing a voltage at its input, so you want all of $v_\text{in}$ to appear at the input terminals of the controlled source. Therefore, it's best to have $R_\text{in} \to \infty$ to avoid loading the voltage source and dropping some fraction of $v_\text{in}$ across $R_g$. If a source is current-controlled, then it is measuring or sensing a current at its input, so you want all of $i_\text{in}$ to pass through the input terminals of the controlled source. Therefore, it's best to have $R_\text{in} \to 0$, which essentially shorts the internal resistance $R_g$ of the source, ensuring that none of $i_\text{in}$ passes through it.
+## Input and Output Impedances 
+
+Table 1 below shows the ideal input and output resistances desired from a controlled source. If a source is voltage-controlled, then it is measuring or sensing a voltage at its input, so you want all of $v_\text{in}$ to appear at the input terminals of the controlled source. Therefore, it's best to have $R_\text{in} \to \infty$ to avoid loading the voltage source and dropping some fraction of $v_\text{in}$ across $R_g$. However, if a source is current-controlled, then it is sensing a current at its input, so you want all of $i_\text{in}$ to pass through the input terminals of the controlled source. Therefore, it's best to have $R_\text{in} \to 0$, which essentially shorts the internal resistance $R_g$ of the source, ensuring that none of $i_\text{in}$ passes through it.
 
 <div markdown="1" style="text-align: center; margin: 25px 0;">
 
@@ -22,15 +24,15 @@ Table 1 below shows the ideal input and output resistances desired from a contro
 
 | Controlled Source | Ideal $R_{in}$ | Ideal $R_{out}$ |
 | :--- | :--- | :--- |
-| **VCCS** | $\infty$ | $\infty$ |
-| **VCVS** | $\infty$ | $0$ |
-| **CCCS** | $0$ | $\infty$ |
-| **CCVS** | $0$ | $0$ |
+| VCCS | $\infty$ | $\infty$ |
+| VCVS | $\infty$ | $0$ |
+| CCCS | $0$ | $\infty$ |
+| CCVS | $0$ | $0$ |
 
   </div>
 
   <p style="font-style: italic; font-size: 0.9em; color: #555; margin-bottom: 8px;">
-    <strong>Table 1:</strong> Ideal impedances for 2-port controlled sources.
+    Table 1: Ideal impedances for 2-port controlled sources.
   </p>
 
 </div>
