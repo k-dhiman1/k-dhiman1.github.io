@@ -12,7 +12,10 @@ main:
 wiki-nav:
   - title: "Analog Circuits"
     children:
+      - title: "Basic MOS Controlled Sources"
+        url: /wiki/mos-controlled-sources/
       - title: "MOS Common-Source Amplifier"
         url: /wiki/mos-cs-amplifier/
       - title: "Transconductance"
         url: /wiki/transconductance/
+      
