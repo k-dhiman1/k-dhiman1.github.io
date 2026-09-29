@@ -1,4 +1,3 @@
-
 ---
 title: "Transconductance"
 classes: wide
@@ -14,7 +13,7 @@ $$I_D = \frac{1}{2} \mu_n C_{ox} \frac{W}{L} (V_{GS} - V_{TH})^2 (1 + \lambda V_
 
 where $\mu_n,$ $C_{ox},$ $\frac{W}{L},$ $\lambda,$ and the threshold voltage $V_{TH}$ are device parameters.
 
-The transfer conductance, or transconductance, is a transfer parameter (i.e., a parameter relating quantities at two different ports) that quantifies the *change* in drain current due to a change in the gate-source voltage. In other words, it is the ratio of the incremental drain current to the incremental gate-source voltage and is given by
+The transfer conductance, or transconductance, is a transfer parameter (i.e., a parameter relating quantities at two different ports) that quantifies the *change* in drain current due to a change in the gate-source voltage. It measures how strongly the transistor reacts to an incremental gate-source voltage. In other words, it is the ratio of the incremental drain current to the incremental gate-source voltage and is given by
 
 $$g_m = \frac{\partial I_D}{\partial V_{GS}} = \mu_n C_{ox} \frac{W}{L} (V_{GS} - V_{TH}) (1 + \lambda V_{DS}).$$
 
