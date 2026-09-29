@@ -20,9 +20,16 @@ A basic incremental circuit model for a MOS transistor based on Eq. \eqref{eq:vc
 
 {% include figure image_path="/assets/images/wiki/mos_ss.svg" caption="Figure 1: MOS transistor small-signal model: (left) ideal model, (right) including channel-length modulation." class="align-center" %}
 
-From Eq. \eqref{eq:vccs}, it can be observed that an input voltage can be given to either the gate or the source terminal, and the output can be taken (across a resistor) from either the drain or the source terminal, as the drain current is equal to the source current. Applying an input to the drain or measuring an output voltage at the gate are of no meaning because the drain voltage only weakly influences the drain current (due to channel-length modulation), and the gate voltage is not influenced by the drain current (but the opposite is true). This results in four possible configurations. Working through the possibilities, we can come the conclusion that loading the transistor as shown below in Fig. 2 gives us the incremental amplification behavior that we are looking for.
+From Eq. \eqref{eq:vccs}, it can be observed that an input voltage can be given to either the gate or the source terminal, and the output can be taken (across a resistor) from either the drain or the source terminal, as the drain current is equal to the source current. Applying an input to the drain or measuring an output voltage at the gate are of no meaning because the drain voltage only weakly influences the drain current (due to channel-length modulation), and the gate voltage is not influenced by the drain current (but the opposite is true). This results in four possible configurations. Working through the possibilities, we can come the conclusion that providing an input at the gate and extracting the output from the drain, as shown below in Fig. 2, gives us the incremental amplification behavior that we are looking for.
 
 {% include figure image_path="/assets/images/wiki/mos_cs_ss_basic.svg" caption="Figure 2: MOS common-source amplifier basic small-signal model." class="align-center" %}
+
+In this configuration, the source terminal is common to both the input and the output ports and can be incrementally grounded. The input is applied to the gate due to the large impedance seen looking in; this ensures that the transistor does not load the source, so the entire $v_\text{in}$ is passed to the gate. The output is taken across the drain and the common terminal because the output impedance when looking into this port is large (ideally infinite), making it so that the entire incremental current passes through the load resistor. These factors together maximize the incremental voltage gain of the circuit.
+
+
+
+
+
 
 <!-- 
 
