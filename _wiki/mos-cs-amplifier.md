@@ -86,15 +86,23 @@ When building discrete circuits, it is preferable to minimize the use of active 
 
 From Fig. 3, it can be observed that $I_D = I_\text{ref}$, $V_G = R_B V_{DD}/(R_A + R_B) \triangleq V_{G0}$, and $V_S = V_{G0} - V_{GS0} \triangleq V_{S0}$, where
 
-$$ V_{GS0} = V_{TH} + \sqrt{ \frac{2 I_\text{ref}{\mu_n C_{ox} (W/L)}} } \quad (M_1 \text{ in saturation; } r_O \to \infty).$$
+$$ V_{GS0} = V_{TH} + \sqrt{ \frac{2 I_\text{ref}}{\mu_n C_{ox} (W/L)} } \quad (M_1 \text{ in saturation; } r_O \to \infty). $$
 
 Thus, the resistor $R_S$ will have to be chosen such that
 
 \begin{equation} 
-  R_S = \frac{V_{S0}}{I_\text{ref}} = \left.\frac{R_B V_{DD}}{R_A + R_B} - V_{TH} - \sqrt{\frac{2 I_\text{ref}{\mu_n C_{ox} (W/L)}}} \middle/ I_\text{ref}\right. .
+  R_S = \frac{V_{S0}}{I_\text{ref}} = \frac{ \frac{R_B V_{DD}}{R_A + R_B} - V_{TH} - \sqrt{\frac{2 I_\text{ref}}{\mu_n C_{ox} (W/L)}} }{I_\text{ref}} .
   \label{eq:r_s-value} 
 \end{equation}
 
+The substitution is highlighted in Fig. 5 below.
+
+<div style="text-align: center; margin: 25px 0;">
+  <img src="/assets/images/wiki/mos_cs_degen_bias.svg" alt="n-MOS degen bias" style="max-height: 350px; width: auto; display: block; margin: 0 auto;" />
+  <p style="font-style: italic; font-size: 0.9em; color: #555; margin-top: 10px;">
+    Figure 5: n-MOS biasing scheme with source resistor instead of current source.
+  </p>
+</div>
 
 <!-- 
 
