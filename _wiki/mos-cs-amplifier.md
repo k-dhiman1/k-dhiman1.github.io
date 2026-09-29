@@ -44,7 +44,10 @@ The effects of channel-length modulation can be included by replacing $R_L$ with
 
 The amplifier topology discussed above requires the n-MOS transistor to biased in the saturation region to realize the desired small-signal amplification and performance. It is generally preferable to bias a transistor using a current rather than voltage in order to minimize variations in the transconductance of the device; one such biasing scheme is shown in Fig. 3 below.
 
-{% include figure image_path="/assets/images/wiki/mos_cs_dc_bias.svg" caption="Figure 3: MOS common-source amplifier biasing scheme with negative feedback." class="align-center" style="max-height: 250px;" %}
+<figure class="align-center">
+  <img src="/assets/images/wiki/mos_cs_dc_bias.svg" alt="MOS biasing scheme" style="max-width: 60%; height: auto;" />
+  <figcaption>Figure 3: MOS common-source amplifier biasing scheme with negative feedback.</figcaption>
+</figure>
 
 This biasing scheme employs implicit negative feedback to maintain a constant drain current $I_D = I_\text{ref}$. To observe how, imagine that there is an infinitesimal capacitance connected from the source to ground (it is reasonable to assume that a node has some small capacitance associated with it). If a current $I_D$ is entering the source and $I_\text{ref}$ is leaving it, then $I_D - I_\text{ref}$ must pass through the infinitesimal capacitor (KCL). If the transistor's drain current is greater than $I_\text{ref}$, then the capacitor current is positive and it begins to charge, thus increasing $V_S$; if $V_S$ increases while $V_G$ is held constant, then the drain current $I_D$ will decrease. Conversely, if the drain current is less than $I_\text{ref}$, then the capacitor current is negative and it begins to discharge to provide the current required to satisfy KCL, thus decreasing $V_S$; if $V_S$ decreases while $V_G$ is held constant, then the drain current $I_D$ will increase. This process continues until $I_D = I_\text{ref}$.
 
