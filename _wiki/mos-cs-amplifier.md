@@ -18,12 +18,10 @@ where $i_d$ is the incremental or small-signal drain current, $g_m$ is the trans
 
 A basic incremental circuit model for a MOS transistor based on Eq. \eqref{eq:vccs} is shown in Fig. 1 below. The effects of channel-length modulation (i.e., the dependence of the drain current on the drain-source voltage) can be accounted for by including a resistor $r_O$ between the drain and the source terminals.
 
-{% include figure image_path="/assets/images/wiki/mos_ss.svg" caption="Figure 1: MOS transistor small-signal model: (left) ideal model, (right) including channel-length modulation." class="align-center" %}
-
 <div style="text-align: center; margin: 25px 0;">
   <img src="/assets/images/wiki/mos_ss.svg" alt="MOS ss model" style="max-height: auto; width: auto; display: block; margin: 0 auto;" />
   <p style="font-style: italic; font-size: 0.9em; color: #555; margin-top: 10px;">
-    Figure 1: MOS transistor small-signal model: (left) ideal model, (right) including channel-length modulation.
+    Figure 1: MOS transistor small-signal model: ideal model (left), including channel-length modulation (right).
   </p>
 </div>
 
@@ -32,7 +30,7 @@ From Eq. \eqref{eq:vccs}, it can be observed that an input voltage can be given 
 This results in four possible input/output configurations. Working through the possibilities, we can come the conclusion that providing an input at the gate and extracting the output from the drain, as shown below in Fig. 2, gives us the incremental amplification behavior that we are looking for.
 
 <div style="text-align: center; margin: 25px 0;">
-  <img src="/assets/images/wiki/mos_cs_ss_basic.svg" alt="MOS cs amp ss ckt" style="max-height: 200px; width: auto; display: block; margin: 0 auto;" />
+  <img src="/assets/images/wiki/mos_cs_ss_basic.svg" alt="MOS cs amp ss ckt" style="max-height: 300px; width: auto; display: block; margin: 0 auto;" />
   <p style="font-style: italic; font-size: 0.9em; color: #555; margin-top: 10px;">
     Figure 2: MOS common-source amplifier basic small-signal model.
   </p>
@@ -57,7 +55,7 @@ The effects of channel-length modulation can be included by replacing $R_L$ with
 The amplifier topology discussed above requires the n-MOS transistor to biased in the saturation region to realize the desired small-signal amplification and performance. It is generally preferable to bias a transistor using a current rather than voltage in order to minimize variations in the transconductance of the device; one such biasing scheme is shown in Fig. 3 below.
 
 <div style="text-align: center; margin: 25px 0;">
-  <img src="/assets/images/wiki/mos_cs_dc_bias.svg" alt="n-MOS biasing scheme" style="max-height: 500px; width: auto; display: block; margin: 0 auto;" />
+  <img src="/assets/images/wiki/mos_cs_dc_bias.svg" alt="n-MOS biasing scheme" style="max-height: 450px; width: auto; display: block; margin: 0 auto;" />
   <p style="font-style: italic; font-size: 0.9em; color: #555; margin-top: 10px;">
     Figure 3: n-MOS current biasing scheme with implicit negative feedback.
   </p>
@@ -68,7 +66,7 @@ This biasing scheme employs implicit negative feedback to maintain a constant dr
 The next step is to connect the input voltage to the gate and the load resistor to the drain. This is done through the use of coupling/bypass capacitors, which ensure that the transistor $M_1$'s operating point is not disturbed by the addition of these components. Furthermore, the source terminal needs to be incrementally grounded via a coupling capacitor, as it is the common terminal for the amplifier. The final circuit is shown in Fig. 4 below.
 
 <div style="text-align: center; margin: 25px 0;">
-  <img src="/assets/images/wiki/mos_cs_dc_bias_full.svg" alt="n-MOS cs amp full" style="max-height: 500px; width: auto; display: block; margin: 0 auto;" />
+  <img src="/assets/images/wiki/mos_cs_dc_bias_full.svg" alt="n-MOS cs amp full" style="max-height: 450px; width: auto; display: block; margin: 0 auto;" />
   <p style="font-style: italic; font-size: 0.9em; color: #555; margin-top: 10px;">
     Figure 4: Full n-MOS common-source amplifier circuit.
   </p>
