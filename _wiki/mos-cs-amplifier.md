@@ -112,7 +112,7 @@ Another way to look at the negative feedback due to $R_S$ is to consider an incr
   \label{eq:vcvs-gain}
 \end{equation}
 
-Note that the factor $g_m R_S/(1 + g_m R_S) < 1$ in the above equation, so while the source voltage changes in a way as to resist the change in the gate voltage (which is the cause for the drain current changing), it cannot fully offset it. This results in a change in the drain current $i_d = g_m v_g/(1 + g_m R_S)$. Compare this to the case of current-source biasing by setting $R_S \to \infty$ in Eq. \eqref{eq:vcvs-gain}. This yields $v_s = v_g$, meaning that the change in the source voltage is equal to the change in the gate voltage, thus maintaining $v_{GS}$ constant, and therefore $i_D$ remains constant.
+Note that the factor $g_m R_S/(1 + g_m R_S) < 1$ in the above equation, so while the source voltage changes in a way as to resist the change in the gate voltage (which is the cause for the drain current changing), it cannot fully offset it, causing the drain current to change by $i_d = g_m v_g/(1 + g_m R_S)$. Compare this to the case of current-source biasing by setting $R_S \to \infty$ in Eq. \eqref{eq:vcvs-gain}. This yields $v_s = v_g$, meaning that the change in the source voltage is equal to the change in the gate voltage, thus maintaining $v_{GS}$ constant, and therefore $i_D$ remains constant.
 
 To analyze the performance of the source-degenerated common-source amplifier, consider the incremental circuit shown in Fig. 6 below. Note that $M_1$ represents the ideal small-signal MOS transistor model (Fig. 1, left). The effect of channel-length modulation is included by explicitly placing $r_O$ in parallel with $M_1$. 
 
