@@ -30,7 +30,7 @@ From Eq. \eqref{eq:vccs}, it can be observed that an input voltage can be given 
 This results in four possible input/output configurations. Working through the possibilities, we can come the conclusion that providing an input at the gate and extracting the output from the drain, as shown below in Fig. 2, gives us the incremental amplification behavior that we are looking for.
 
 <div style="text-align: center; margin: 25px 0;">
-  <img src="/assets/images/wiki/mos_cs_ss_basic.svg" alt="MOS cs amp ss ckt" style="max-height: 300px; width: auto; display: block; margin: 0 auto;" />
+  <img src="/assets/images/wiki/mos_cs_ss_basic.svg" alt="MOS cs amp ss ckt" style="max-height: 200px; width: auto; display: block; margin: 0 auto;" />
   <p style="font-style: italic; font-size: 0.9em; color: #555; margin-top: 10px;">
     Figure 2: MOS common-source amplifier basic small-signal model.
   </p>
@@ -55,7 +55,7 @@ The effects of channel-length modulation can be included by replacing $R_L$ with
 The amplifier topology discussed above requires the n-MOS transistor to biased in the saturation region to realize the desired small-signal amplification and performance. It is generally preferable to bias a transistor using a current rather than voltage in order to minimize variations in the transconductance of the device; one such biasing scheme is shown in Fig. 3 below.
 
 <div style="text-align: center; margin: 25px 0;">
-  <img src="/assets/images/wiki/mos_cs_dc_bias.svg" alt="n-MOS biasing scheme" style="max-height: 450px; width: auto; display: block; margin: 0 auto;" />
+  <img src="/assets/images/wiki/mos_cs_dc_bias.svg" alt="n-MOS biasing scheme" style="max-height: 400px; width: auto; display: block; margin: 0 auto;" />
   <p style="font-style: italic; font-size: 0.9em; color: #555; margin-top: 10px;">
     Figure 3: n-MOS current biasing scheme with implicit negative feedback.
   </p>
@@ -66,7 +66,7 @@ This biasing scheme employs implicit negative feedback to maintain a constant dr
 The next step is to connect the input voltage to the gate and the load resistor to the drain. This is done through the use of coupling/bypass capacitors, which ensure that the transistor $M_1$'s operating point is not disturbed by the addition of these components. Furthermore, the source terminal needs to be incrementally grounded via a coupling capacitor, as it is the common terminal for the amplifier. The final circuit is shown in Fig. 4 below.
 
 <div style="text-align: center; margin: 25px 0;">
-  <img src="/assets/images/wiki/mos_cs_dc_bias_full.svg" alt="n-MOS cs amp full" style="max-height: 450px; width: auto; display: block; margin: 0 auto;" />
+  <img src="/assets/images/wiki/mos_cs_dc_bias_full.svg" alt="n-MOS cs amp full" style="max-height: 400px; width: auto; display: block; margin: 0 auto;" />
   <p style="font-style: italic; font-size: 0.9em; color: #555; margin-top: 10px;">
     Figure 4: Full n-MOS common-source amplifier circuit.
   </p>
@@ -117,7 +117,7 @@ Note that the factor $g_m R_S/(1 + g_m R_S) < 1$ in the above equation, so while
 To analyze the performance of the source-degenerated common-source amplifier, consider the incremental circuit shown in Fig. 6 below. Note that $M_1$ represents the ideal small-signal MOS transistor model (Fig. 1, left). The effect of channel-length modulation is included by explicitly placing $r_O$ in parallel with $M_1$. 
 
 <div style="text-align: center; margin: 25px 0;">
-  <img src="/assets/images/wiki/mos_cs_degen_ss.svg" alt="MOS degen ss" style="max-height: 450px; width: auto; display: block; margin: 0 auto;" />
+  <img src="/assets/images/wiki/mos_cs_degen_ss.svg" alt="MOS degen ss" style="max-height: 350px; width: auto; display: block; margin: 0 auto;" />
   <p style="font-style: italic; font-size: 0.9em; color: #555; margin-top: 10px;">
     Figure 6: Basic incremental circuit for common-source amplifier with source degeneration.
   </p>
