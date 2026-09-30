@@ -44,7 +44,7 @@ If a voltage output is desired from a controlled source, then it is best to desi
 A controlled source built using a single MOS transistor can only realize a maximum incremental voltage or current gain of 1. What is the point of having a VCVS or CCCS with such a property? The answer is that such circuits function as buffers between a source and a load. Imagine that you have a "poor" current source as shown in Fig. 2 below. Due to the finite output resistance of the source, it cannot drive a load with all the available current, as some of it will be lost in the $R_g$. To bypass this, a current buffer (i.e., a CCCS with a gain of 1) is placed in between the poor current source and the load. From the load's perspective, this combination of a poor current source with a current buffer appears to be a "good" current source with a large output resistance.
 
 <div style="text-align: center; margin: 25px 0;">
-  <img src="/assets/images/wiki/current_buffer_block_diag.svg" alt="MOS ctrl src block" style="max-height: 250px; width: auto; display: block; margin: 0 auto;" />
+  <img src="/assets/images/wiki/current_buffer_block_diag.svg" alt="MOS ctrl src block" style="max-height: 325px; width: auto; display: block; margin: 0 auto;" />
   <p style="font-style: italic; font-size: 0.9em; color: #555; margin-top: 10px;">
     Figure 2: Using a current buffer to drive a load with a current source that has a finite output resistance.
   </p>
