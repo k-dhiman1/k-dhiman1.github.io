@@ -30,7 +30,7 @@ From Eq. \eqref{eq:vccs}, it can be observed that an input voltage can be given 
 This results in four possible input/output configurations. Working through the possibilities, we can come the conclusion that providing an input at the gate and extracting the output from the drain, as shown below in Fig. 2, gives us the incremental amplification behavior that we are looking for.
 
 <div style="text-align: center; margin: 25px 0;">
-  <img src="/assets/images/wiki/mos_cs_ss_basic.svg" alt="MOS cs amp ss ckt" style="max-height: 200px; width: auto; display: block; margin: 0 auto;" />
+  <img src="/assets/images/wiki/mos_cs_ss_basic.svg" alt="MOS cs amp ss ckt" style="max-height: 250px; width: auto; display: block; margin: 0 auto;" />
   <p style="font-style: italic; font-size: 0.9em; color: #555; margin-top: 10px;">
     Figure 2: MOS common-source amplifier basic small-signal model.
   </p>
@@ -97,7 +97,7 @@ $$
 The substitution is highlighted in Fig. 5 below.
 
 <div style="text-align: center; margin: 25px 0;">
-  <img src="/assets/images/wiki/mos_cs_degen_bias.svg" alt="n-MOS degen bias" style="max-height: 350px; width: auto; display: block; margin: 0 auto;" />
+  <img src="/assets/images/wiki/mos_cs_degen_bias.svg" alt="n-MOS degen bias" style="max-height: 325px; width: auto; display: block; margin: 0 auto;" />
   <p style="font-style: italic; font-size: 0.9em; color: #555; margin-top: 10px;">
     Figure 5: n-MOS biasing scheme with source resistor instead of current source.
   </p>
